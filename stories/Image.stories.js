@@ -8,4 +8,4 @@ export default {
 
 export const DefaultImage = () => <ImageUI />
 
-export const BigImage = () => <ImageUI height="500" width="500"/>
+export const SmallImage = () => <ImageUI  width="10"/>

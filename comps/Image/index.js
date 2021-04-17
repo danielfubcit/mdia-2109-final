@@ -2,25 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
-const ImageCont = styled.span`
-    width: ${props=>props.width}px;
-    height: ${props=>props.height}px;
+const ImageCont = styled.div`
+    width: ${props=>props.width}%;
+    height: auto;
 `;
 
 const ImageInput = styled.img`
-    width: ${props=>props.width}px;
-    height: ${props=>props.height}px;
+    width: ${props=>props.width}%;
+    height: auto;
 `;
 
 //props
 const ImageUI = ({
-    width = 189,
-    height = 189,
-    src = "/vercel.svg"
+    width = 30,
+    src = "/greenCar.svg"
 }) => {
     const router = useRouter();
     return <ImageCont onClick={()=>router.push(routeTo)}>
-         <ImageInput width={width} height={height} src={src} /> 
+         <ImageInput width={width} src={src} /> 
     </ImageCont>
 }
 

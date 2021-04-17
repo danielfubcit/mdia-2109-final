@@ -9,7 +9,7 @@ const ButtonCont = styled.span`
 const ButtonInput = styled.button`
     display: flex;
     width: ${props=>props.width}px;
-    height: 98px;
+    height: ${props=>props.height}px;
     border-radius: 25px;
     font-weight: bold;
     justify-content: center;
@@ -27,11 +27,12 @@ const ButtonUI = ({
     bgcolor="#9AC397",
     routeTo="/",
     fontSize=36,
-    width = 320
+    width = 320,
+    height = 100
 }) => {
     const router = useRouter();
     return <ButtonCont onClick={()=>router.push(routeTo)}>
-        <ButtonInput width={width} bgcolor={bgcolor} fontSize={fontSize}>
+        <ButtonInput height={height} width={width} bgcolor={bgcolor} fontSize={fontSize}>
         {text}
         </ButtonInput>
     </ButtonCont>
