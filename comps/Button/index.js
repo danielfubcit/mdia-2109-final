@@ -8,30 +8,30 @@ const ButtonCont = styled.span`
 
 const ButtonInput = styled.button`
     display: flex;
-    width: 133px;
-    height: 72px;
-    border-radius: 5px;
+    width: 320px;
+    height: 98px;
+    border-radius: 25px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    color:black;
+    color:white;
     background-color: ${props=>props.bgcolor};
     font-size: ${props=>props.fontSize}px;
+    font-weight: bold;
     border: none;
 `;
 
 //props
 const ButtonUI = ({
-    text="km",
-    bgcolor="white",
+    text="GAS",
+    bgcolor="#9AC397",
     routeTo="/",
-    number="2",
-    fontSize=30
+    fontSize=36
 }) => {
     const router = useRouter();
     return <ButtonCont onClick={()=>router.push(routeTo)}>
         <ButtonInput bgcolor={bgcolor} fontSize={fontSize}>
-        {number}{text}
+        {text}
         </ButtonInput>
     </ButtonCont>
 }
