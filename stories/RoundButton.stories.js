@@ -8,3 +8,5 @@ export default {
 
 export const DefaultRoundButton = () => <RoundButtonUI />
 
+export const RoundButton2 = () => <RoundButtonUI text="CONTINUE"/>
+

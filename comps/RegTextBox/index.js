@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const RegTextBoxCont = styled.span`
+const RegTextBoxCont = styled.div`
     font-family: 'Roboto Condensed', sans-serif;
     width: 250px;
     height: 122px;
