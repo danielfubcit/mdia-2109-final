@@ -2,38 +2,37 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
-const ButtonCont = styled.span`
+const RoundButtonCont = styled.span`
 
 `;
 
-const ButtonInput = styled.button`
+const RoundButtonInput = styled.button`
     display: flex;
-    width: 320px;
-    height: 98px;
-    border-radius: 25px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     color:white;
     background-color: ${props=>props.bgcolor};
     font-size: ${props=>props.fontSize}px;
-    font-weight: bold;
     border: none;
 `;
 
 //props
-const ButtonUI = ({
-    text="GAS",
+const RoundButtonUI = ({
+    text="BEGIN",
     bgcolor="#9AC397",
     routeTo="/",
-    fontSize=36
+    fontSize=30
 }) => {
     const router = useRouter();
-    return <ButtonCont onClick={()=>router.push(routeTo)}>
-        <ButtonInput bgcolor={bgcolor} fontSize={fontSize}>
+    return <RoundButtonCont onClick={()=>router.push(routeTo)}>
+        <RoundButtonInput bgcolor={bgcolor} fontSize={fontSize}>
         {text}
-        </ButtonInput>
-    </ButtonCont>
+        </RoundButtonInput>
+    </RoundButtonCont>
 }
 
-export default ButtonUI;
+export default RoundButtonUI;

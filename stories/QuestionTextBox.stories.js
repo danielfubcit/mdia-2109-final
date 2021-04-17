@@ -8,4 +8,3 @@ export default {
 
 export const DefaultQuestionTextBox = () => <QuestionTextBoxUI />
 
-export const QuestionTextBox2 = () => <QuestionTextBoxUI text1="black" spantext=" white" text2=" black"/>

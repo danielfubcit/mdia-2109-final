@@ -1,29 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const QuestionTextboxCont = styled.span`
-    text-align: center;
-    padding:40px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 28px;
+const QuestionTextboxCont = styled.div`
+    display: flex;
+    width: 340px;
+    height: 238px;
+    background: #45AFDD;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 `;
 
-const QuestionTextboxMid = styled.span`
+const QuestionTextboxImg = styled.img`
+    padding-bottom: 30px;
+    position: relative;
+    width: 80%;
+    height: auto;
+    top: 20px;
+`;
+
+const QuestionTextboxText = styled.div`
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
     color: white;
+    padding-bottom: 30px;
 `;
 
 //props
 const QuestionTextboxUI = ({
-    text1 = "How much CO2 emissions does an",
-    spantext = " ELECTRIC CAR",
-    text2 = " produce daily?"
+    text = "Select your car type",
+    src = "/greenCar.svg"
 }) => {
     return <QuestionTextboxCont>
-        {text1}
-        <QuestionTextboxMid>
-        {spantext}
-        </QuestionTextboxMid>
-        {text2}
+        <QuestionTextboxImg src={src}>
+        </QuestionTextboxImg>
+        <QuestionTextboxText >
+        {text}
+        </QuestionTextboxText>
     </QuestionTextboxCont>
 }
 
