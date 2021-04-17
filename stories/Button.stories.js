@@ -10,4 +10,4 @@ export const DefaultButton = () => <ButtonUI />
 
 export const ColorButton = () => <ButtonUI bgcolor="red"/>
 
-export const TextButton = () => <ButtonUI text=" yes"/>
+export const SmallButton = () => <ButtonUI bgcolor="#9AC397" width="170" text="Yes"/>
