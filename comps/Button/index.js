@@ -8,7 +8,7 @@ const ButtonCont = styled.span`
 
 const ButtonInput = styled.button`
     display: flex;
-    width: 320px;
+    width: ${props=>props.width}px;
     height: 98px;
     border-radius: 25px;
     font-weight: bold;
@@ -26,11 +26,12 @@ const ButtonUI = ({
     text="GAS",
     bgcolor="#9AC397",
     routeTo="/",
-    fontSize=36
+    fontSize=36,
+    width = 320
 }) => {
     const router = useRouter();
     return <ButtonCont onClick={()=>router.push(routeTo)}>
-        <ButtonInput bgcolor={bgcolor} fontSize={fontSize}>
+        <ButtonInput width={width} bgcolor={bgcolor} fontSize={fontSize}>
         {text}
         </ButtonInput>
     </ButtonCont>

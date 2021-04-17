@@ -21,6 +21,7 @@ const QuestionTextboxImg = styled.img`
 `;
 
 const QuestionTextboxText = styled.div`
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     font-size: 34px;
     text-align: center;
