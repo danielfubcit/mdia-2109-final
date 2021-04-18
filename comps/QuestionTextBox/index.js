@@ -15,7 +15,7 @@ const QuestionTextboxCont = styled.div`
 const QuestionTextboxImg = styled.img`
     padding-bottom: 30px;
     position: relative;
-    width: 80%;
+    width: ${prop=>prop.width}%;
     height: auto;
     top: 20px;
 `;
@@ -32,10 +32,11 @@ const QuestionTextboxText = styled.div`
 //props
 const QuestionTextboxUI = ({
     text = "Select your car type",
-    src = "/greenCar.svg"
+    src = "/greenCar.svg",
+    width = "80"
 }) => {
     return <QuestionTextboxCont>
-        <QuestionTextboxImg src={src}>
+        <QuestionTextboxImg width={width} src={src}>
         </QuestionTextboxImg>
         <QuestionTextboxText >
         {text}
