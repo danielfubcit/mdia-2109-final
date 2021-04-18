@@ -30,8 +30,9 @@ const ButtonUI = ({
     width = 320,
     height = 100
 }) => {
-    const router = useRouter();
-    return <ButtonCont onClick={()=>router.push(routeTo)}>
+    //const router = useRouter();
+    //onClick={()=>router.push(routeTo)}
+    return <ButtonCont>
         <ButtonInput height={height} width={width} bgcolor={bgcolor} fontSize={fontSize}>
         {text}
         </ButtonInput>
