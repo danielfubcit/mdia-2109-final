@@ -1,48 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const MainTitleCont = styled.span`
+const MainTitleCont = styled.div`
     font-family: 'Roboto Condensed', sans-serif;
-`
-
-const MainTitleP1 = styled.span`
-    font-size: 96px;
-`;
-
-const MainTitleP2 = styled.span`
-    font-size: 36px;
-`;
-
-const MainTitleP3 = styled.span`
-    font-size: 34px;
-    color:white;
-`;
-
-const MainTitleP4 = styled.span`
-    font-size: 96px;
+    width: 250px;
+    height: 90px;
     font-weight: bold;
-`;
+    font-size: ${prop=>prop.fontsize}px;
+    text-align: center;
+    color: ${prop=>prop.color};
+`
 
 //props
 const MainTitleUI = ({
-    text1 = "CO",
-    text2 = "2",
-    text3 = " and",
-    text4 = "YOU"
+    text = "CO2 EMISSION RESULTS",
+    color = "#3AA4D1",
+    fontsize = "32"
 }) => {
-    return <MainTitleCont>
-        <MainTitleP1>
-            {text1}
-        </MainTitleP1>
-        <MainTitleP2>
-            {text2}
-        </MainTitleP2>
-        <MainTitleP3>
-            {text3}
-        </MainTitleP3>
-        <MainTitleP4>
-            {text4}
-        </MainTitleP4>
+    return <MainTitleCont color={color} fontsize={fontsize}>
+        {text}
     </MainTitleCont>
 }
 

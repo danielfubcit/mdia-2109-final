@@ -7,4 +7,6 @@ export default {
 }
 
 export const DefaultMainTitle = () => <MainTitleUI />
+export const WhiteMainTitle = () => <MainTitleUI fontsize="24" color="white" text="TEST YOUR CARBON
+EMISSION RATE"/>
 
