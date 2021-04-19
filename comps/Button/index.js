@@ -25,14 +25,13 @@ const ButtonInput = styled.button`
 const ButtonUI = ({
     text="GAS",
     bgcolor="#9AC397",
-    routeTo="/",
+    routeTo="/distanceSelection",
     fontSize=36,
     width = 320,
     height = 100
 }) => {
-    //const router = useRouter();
-    //onClick={()=>router.push(routeTo)}
-    return <ButtonCont>
+    const router = useRouter();
+    return <ButtonCont onClick={()=>router.push(routeTo)}>
         <ButtonInput height={height} width={width} bgcolor={bgcolor} fontSize={fontSize}>
         {text}
         </ButtonInput>

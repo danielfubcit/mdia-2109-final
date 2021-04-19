@@ -8,7 +8,8 @@ const InfoTextBoxCont = styled.div`
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     width: 330px;
-    height: 220px;
+    height: 250px;
+    padding: 20px;
     background: #45AFDD;
     border-radius: 25px;
     color: #FFFFFF;
