@@ -23,8 +23,8 @@ const FactPageCont = styled.div`
   }
   
   .button {
-    position: relative;
-    top:-140px;
+    position: absolute;
+    bottom: -30vh;
     }
 
 `;
