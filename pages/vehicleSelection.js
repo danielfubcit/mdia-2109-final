@@ -42,13 +42,13 @@ export default function Vehicle() {
             <QuestionTextboxUI></QuestionTextboxUI>
         </div>
         <div className="item">
-            <ButtonUI></ButtonUI>
+            <ButtonUI routeTo="/distance/gas"></ButtonUI>
         </div>
         <div className="item">
-            <ButtonUI text="ELECTRIC"></ButtonUI>
+            <ButtonUI text="ELECTRIC" routeTo="/distance/electric"></ButtonUI>
         </div>
         <div className="item">
-            <ButtonUI text="HYBRID"></ButtonUI>
+            <ButtonUI text="HYBRID" routeTo="/distance/hybrid"></ButtonUI>
         </div>
     </div>
   </VehicleCont>
