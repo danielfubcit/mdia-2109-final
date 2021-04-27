@@ -18,6 +18,19 @@ const QuestionTextboxImg = styled.img`
     width: ${prop=>prop.width}%;
     height: auto;
     top: 20px;
+    animation-name: ${prop=>prop.animation};
+    animation-duration: 2s;  
+    animation-fill-mode: both;
+
+    @keyframes moveToRight{
+        from {left: -500px;}
+        to {left: 0px;}
+    }
+
+    @keyframes sizeChange {
+        0%   {width:10%}
+        100% {width:50%}
+    }
 `;
 
 const QuestionTextboxText = styled.div`
@@ -33,10 +46,11 @@ const QuestionTextboxText = styled.div`
 const QuestionTextboxUI = ({
     text = "Select your car type",
     src = "/greenCar.svg",
-    width = "80"
+    width = "80",
+    animation = "moveToRight"
 }) => {
     return <QuestionTextboxCont>
-        <QuestionTextboxImg width={width} src={src}>
+        <QuestionTextboxImg width={width} src={src} animation={animation}>
         </QuestionTextboxImg>
         <QuestionTextboxText >
         {text}

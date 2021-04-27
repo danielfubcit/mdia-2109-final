@@ -12,6 +12,7 @@ const HomeCont = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #79CFE2;
+  height:100vh;
 
   .img, .title, .button{
     margin:50px;
