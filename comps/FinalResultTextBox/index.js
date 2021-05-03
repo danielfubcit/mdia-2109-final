@@ -30,9 +30,10 @@ const FinalResultTextBoxText = styled.div`
 const FinalResultTextBoxUI = ({
     text = "Eat locally",
     src = "/cafe.svg",
-    fontsize = 34
+    fontsize = 34,
+    onClick = () => {}
 }) => {
-    return <FinalResultTextBoxCont>
+    return <FinalResultTextBoxCont onClick={onClick}>
         <FinalResultTextBoxImg src={src}>
         </FinalResultTextBoxImg>
         <FinalResultTextBoxText fontsize={fontsize}>
