@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const RegTextBoxCont = styled.div`
     font-family: 'Roboto Condensed', sans-serif;
-    width: 250px;
+    width: 300px;
     height: 122px;
     word-wrap: break-word;
     color: white;
