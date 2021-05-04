@@ -38,18 +38,22 @@ export default function FirstResult() {
 
   var text1 = "";
   var bgcolor = "#45AFDD";
+  var route = "";
 
   if(km === "zero"){
     text1 = gaskm.zero.text1;
+    route = gaskm.zero.route;
   }
 
   if(km === "twentyFive"){
     text1 = gaskm.twentyFive.text1;
+    route = gaskm.twentyFive.route;
   }
 
   if(km === "fifty"){
     text1 = gaskm.fifty.text1;
     bgcolor = gaskm.fifty.bgcolor;
+    route = gaskm.fifty.route;
   } 
 
   return <FirstResultCont>
@@ -69,7 +73,7 @@ export default function FirstResult() {
         <ImageUI width="100" src="/carongreen.png"></ImageUI>
     </div>
     <div className="button">
-        <RoundButtonUI text="CONTINUE"></RoundButtonUI>
+        <RoundButtonUI routeTo={route} text="CONTINUE"></RoundButtonUI>
     </div>
   </FirstResultCont>
 }
