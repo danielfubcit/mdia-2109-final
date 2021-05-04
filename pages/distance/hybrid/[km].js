@@ -38,18 +38,22 @@ export default function FirstResult() {
 
   var text1 = "3kg";
   var bgcolor = "#45AFDD";
+  var route = "";
 
   if(km === "zero"){
     text1 = hybridkm.zero.text1;
+    route = hybridkm.zero.route;
   }
 
   if(km === "twentyFive"){
     text1 = hybridkm.twentyFive.text1;
+    route = hybridkm.twentyFive.route;
   }
 
   if(km === "fifty"){
     text1 = hybridkm.fifty.text1;
     bgcolor = hybridkm.fifty.bgcolor;
+    route = hybridkm.fifty.route;
   } 
 
   return <FirstResultCont>
@@ -69,7 +73,7 @@ export default function FirstResult() {
         <ImageUI width="100" src="/carongreen.png"></ImageUI>
     </div>
     <div className="button">
-        <RoundButtonUI text="CONTINUE"></RoundButtonUI>
+        <RoundButtonUI routeTo={route} text="CONTINUE"></RoundButtonUI>
     </div>
   </FirstResultCont>
 }
