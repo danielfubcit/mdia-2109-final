@@ -42,13 +42,13 @@ export default function Vehicle() {
             <QuestionTextboxUI></QuestionTextboxUI>
         </div>
         <div className="item">
-            <ButtonUI routeTo="/distance/gas"></ButtonUI>
+            <ButtonUI animation="moveToRight" delay="1s" routeTo="/distance/gas"></ButtonUI>
         </div>
         <div className="item">
-            <ButtonUI text="ELECTRIC" routeTo="/distance/electric"></ButtonUI>
+            <ButtonUI animation="moveToRight" delay="1.25s" text="ELECTRIC" routeTo="/distance/electric"></ButtonUI>
         </div>
         <div className="item">
-            <ButtonUI text="HYBRID" routeTo="/distance/hybrid"></ButtonUI>
+            <ButtonUI animation="moveToRight" delay="1.5s" text="HYBRID" routeTo="/distance/hybrid"></ButtonUI>
         </div>
     </div>
   </VehicleCont>

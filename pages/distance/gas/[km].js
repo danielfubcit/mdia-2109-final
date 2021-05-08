@@ -24,11 +24,6 @@ const FirstResultCont = styled.div`
   .marginB {
     margin-bottom: 40px;
   }
-  
-  .button {
-    position: absolute;
-    bottom: -30vh;
-    }
 
 `;
 
@@ -70,10 +65,13 @@ export default function FirstResult() {
         <RegTextBoxUI></RegTextBoxUI>
     </div>
     <div>
-        <ImageUI width="100" src="/carongreen.png"></ImageUI>
+    <ImageUI position="absolute" zIndex="1" animation="moveLeft" width="30" delay = "2s" src="/sportcar.png"></ImageUI>
     </div>
-    <div className="button">
-        <RoundButtonUI routeTo={route} text="CONTINUE"></RoundButtonUI>
+    <div>
+        <ImageUI animation="moveUp" width="100" src="/greenfloor.png"></ImageUI>
+    </div>
+    <div>
+        <RoundButtonUI position="absolute" routeTo={route} text="CONTINUE"></RoundButtonUI>
     </div>
   </FirstResultCont>
 }

@@ -13,6 +13,25 @@ const ResultTextboxCont = styled.div`
     border-radius: 25px;
     color: #FFFFFF;
     font-weight: bold;
+    box-shadow: 0px 5px 7px grey;
+    position: relative;
+    animation: spin 1s;
+    animation-delay: 0s;
+
+    @keyframes spin {
+        from {
+            width: 0px;
+            height: 0px;
+            opacity: 0;
+            transform:rotate(0deg);
+        }
+        to {
+            width: 280px;
+            height: 170px;
+            opacity: 1;
+            transform:rotate(360deg);
+        }
+            }
 `;
 
 const ResultTextboxHead = styled.div`
@@ -27,7 +46,7 @@ const ResultTextboxText = styled.div`
 const ResultTextboxUI = ({
     text1 = "4kg",
     text2 = "CO2 EMITTED",
-    bgcolor = "#45AFDD"
+    bgcolor = "#45AFDD",
 }) => {
     return <ResultTextboxCont bgcolor={bgcolor}>
         <ResultTextboxHead>{text1}</ResultTextboxHead>
