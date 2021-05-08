@@ -10,6 +10,7 @@ const FinalResultTextBoxExtendCont = styled.div`
     border-radius: 30px;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 2px 10px 10px grey;
 `;
 
 const FinalResultTextBoxExtendImg = styled.img`
