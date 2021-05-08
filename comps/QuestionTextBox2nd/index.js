@@ -60,7 +60,7 @@ const QuestionTextbox2ndUI = ({
 }) => {
     return <QuestionTextbox2ndCont>
         <QuestionTextbox2ndImgCont>
-            <QuestionTextbox2ndImg animation="sizeChange2" delay="1.5s" src={src1}></QuestionTextbox2ndImg>
+            <QuestionTextbox2ndImg animation="sizeChange2" delay="0.5s" src={src1}></QuestionTextbox2ndImg>
             <QuestionTextbox2ndImg animation={animation} delay={delay} src={src2}></QuestionTextbox2ndImg>
         </QuestionTextbox2ndImgCont>
         <QuestionTextbox2ndText>{text}</QuestionTextbox2ndText>
