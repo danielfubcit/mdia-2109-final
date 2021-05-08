@@ -44,7 +44,7 @@ export default function Fact() {
       <title>Fact Page</title>
     </Head>
     <div className="back">
-    <ButtonUI routeTo="/distance/gas/zero" bgcolor="#2C5A27" width="130" height="60" text="Back" fontSize="26"></ButtonUI>
+    <ButtonUI routeTo="/distance/gas/fifty" bgcolor="#2C5A27" width="130" height="60" text="Back" fontSize="26"></ButtonUI>
     </div>
     <div className="body">
       <div className="marginT marginB">
