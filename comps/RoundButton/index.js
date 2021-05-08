@@ -20,22 +20,26 @@ const RoundButtonInput = styled.button`
     font-size: ${props=>props.fontSize}px;
     border: none;
     box-shadow: 0px 5px 7px grey;
-    top:-150px;
-    right:-50px;
     
-    animation: 1s fadeIn;
-    animation-delay:3s;
+    animation: ${props=>props.animation};
+    animation-duration: 1s; 
+    animation-delay:2s;
     animation-fill-mode: forwards;
-    visibility: hidden;
+    visibility: ${props=>props.visibility};
 
     @keyframes fadeIn {
         99% {
           visibility: hidden;
+          top:-150px;
+          right:-50px;
         }
         100% {
           visibility: visible;
+          top:-150px;
+          right:-50px;
         }
     }
+
 `;
 
 //props
@@ -45,10 +49,12 @@ const RoundButtonUI = ({
     routeTo="/vehicleSelection",
     fontSize=30,
     position = "relative",
+    animation = "",
+    visibility = "visible",
 }) => {
     const router = useRouter();
-    return <RoundButtonCont position={position} onClick={()=>router.push(routeTo)}>
-        <RoundButtonInput position={position} bgcolor={bgcolor} fontSize={fontSize}>
+    return <RoundButtonCont  position={position} onClick={()=>router.push(routeTo)}>
+        <RoundButtonInput visibility={visibility} animation={animation} position={position} bgcolor={bgcolor} fontSize={fontSize}>
         {text}
         </RoundButtonInput>
     </RoundButtonCont>
