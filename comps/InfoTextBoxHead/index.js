@@ -12,6 +12,17 @@ const InfoTextBoxHeadCont = styled.div`
     word-wrap: break-word;
     color: white;
     text-align: ${props=>props.align};
+
+    position: relative;
+
+    animation-name: moveRight;
+    animation-duration: 2s;  
+    animation-fill-mode: both;
+
+    @keyframes moveRight{
+        from {left: -400px;}
+        to {left: 0px;}
+    }
 `;
 
 const InfoTextBoxHeadHead = styled.div`

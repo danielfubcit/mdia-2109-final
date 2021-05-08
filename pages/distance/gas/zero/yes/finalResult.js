@@ -32,8 +32,6 @@ export default function FinalResult() {
   const [compress2, setCompress2] = useState(false);
   const [compress3, setCompress3] = useState(false);
 
-  console.log("meunstate: ", compress1);
-
   const onClick1 = () => {
     setCompress1(!compress1);
     setCompress2(false);
@@ -63,13 +61,13 @@ export default function FinalResult() {
       <RegTextBoxUI text="Here’s what you can do to further help the environment" fontSize="26"></RegTextBoxUI>
     </div>
     <div className="marginB" onClick={onClick1}>
-      {compress1 === false ? <FinalResultTextBoxUI /> : <FinalResultTextBoxExtandUI />}
+      {compress1 === false ? <FinalResultTextBoxUI></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI />}
     </div>
     <div className="marginB" onClick={onClick2}>
-      {compress2 === false ? <FinalResultTextBoxUI text="Consume Less" src="/eating.svg" fontsize="28"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/eating.svg" text="red meat and agriculture use contributes to carbon emissions."></FinalResultTextBoxExtandUI>}
+      {compress2 === false ? <FinalResultTextBoxUI delay="3s" text="Consume Less" src="/eating.svg" fontsize="28"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/eating.svg" text="red meat and agriculture use contributes to carbon emissions."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB" onClick={onClick3}>
-      {compress3 === false ? <FinalResultTextBoxUI text="Reuse &#38; Recycle" src="/recycle.svg" fontsize="26"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/recycle.svg" text="29% of greenhouse gas emmissions result from provision of goods."></FinalResultTextBoxExtandUI>}
+      {compress3 === false ? <FinalResultTextBoxUI delay="4s" text="Reuse &#38; Recycle" src="/recycle.svg" fontsize="26"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/recycle.svg" text="29% of greenhouse gas emmissions result from provision of goods."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB">
       <ButtonUI routeTo="/" bgcolor="#2C5A27" width="190" height="60" text="Return Home" fontSize="26"></ButtonUI>
