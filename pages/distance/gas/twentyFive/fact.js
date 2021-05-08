@@ -5,6 +5,7 @@ import InfoTextBoxHeadUI from '../../../../comps/InfoTextBoxHead'
 import InfoTextBoxUI from '../../../../comps/InfoTextBox'
 import ImageUI from '../../../../comps/Image';
 import RoundButtonUI from '../../../../comps/RoundButton';
+import ButtonUI from '../../../../comps/Button';
 import {useRouter} from 'next/router';
 
 const FactCont = styled.div`
@@ -12,8 +13,6 @@ const FactCont = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #79CFE2;
-  justify-content: center;
-  align-items: center;
 
   .marginT {
     margin-top: 50px;
@@ -22,11 +21,19 @@ const FactCont = styled.div`
   .marginB {
     margin-bottom: 40px;
   }
-  
-  .button {
-    position: absolute;
-    bottom: -30vh;
-    }
+
+  .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
 
 `;
 
@@ -36,17 +43,22 @@ export default function Fact() {
     <Head>
       <title>Fact Page</title>
     </Head>
-    <div className="marginT marginB">
-        <InfoTextBoxHeadUI></InfoTextBoxHeadUI>
+    <div className="back">
+    <ButtonUI routeTo="/distance/gas/twentyFive" bgcolor="#2C5A27" width="130" height="60" text="Back" fontSize="26"></ButtonUI>
     </div>
-    <div className="marginB">
-        <InfoTextBoxUI></InfoTextBoxUI>
-    </div>
-    <div>
-        <ImageUI width="100" src="/tsunami.png"></ImageUI>
-    </div>
-    <div className="button">
-        <RoundButtonUI routeTo="transport" text="CONTINUE"></RoundButtonUI>
+    <div className="body">
+      <div className="marginT marginB">
+          <InfoTextBoxHeadUI></InfoTextBoxHeadUI>
+      </div>
+      <div className="marginB">
+          <InfoTextBoxUI></InfoTextBoxUI>
+      </div>
+      <div>
+          <ImageUI iteration="infinite" animation="moveLeftRight" width="100" src="/tsunami.png"></ImageUI>
+      </div>
+      <div>
+          <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" routeTo="transport" text="CONTINUE"></RoundButtonUI>
+      </div>
     </div>
   </FactCont>
 }
