@@ -14,6 +14,22 @@ const ResultHeadboxCont = styled.div`
     color: #FFFFFF;
     font-weight: bold;
     font-size: 36px;
+
+    animation-name: sizeChange;
+    animation-duration: 1s;  
+    animation-fill-mode: both;
+
+    @keyframes sizeChange {
+        0%  {width: 0px;
+            height: 0px;
+            font-size: 0px;}
+        70% {
+            font-size: 0px;
+        }
+        100% {width: 340px;
+            height: 100px;
+            font-size: 36px;}
+    }
 `;
 
 const ResultHeadboxText = styled.div`

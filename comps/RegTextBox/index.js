@@ -9,6 +9,17 @@ const RegTextBoxCont = styled.div`
     color: white;
     text-align: ${props=>props.align};
     font-size: ${props=>props.fontSize}px;
+    position: relative;
+
+    animation-name: moveRight;
+    animation-duration: 2s;  
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+    @keyframes moveRight{
+        from {left: -400px;}
+        to {left: 0px;}
+    }
 `
 
 //props
