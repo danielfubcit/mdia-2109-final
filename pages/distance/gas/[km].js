@@ -65,13 +65,10 @@ export default function FirstResult() {
         <RegTextBoxUI></RegTextBoxUI>
     </div>
     <div>
-    <ImageUI position="absolute" zIndex="1" animation="moveLeft" width="30" delay = "2s" src="/sportcar.png"></ImageUI>
+        <ImageUI animation="moveUp" width="100" src="/carongreen.png"></ImageUI>
     </div>
     <div>
-        <ImageUI animation="moveUp" width="100" src="/greenfloor.png"></ImageUI>
-    </div>
-    <div>
-        <RoundButtonUI position="absolute" routeTo={route} text="CONTINUE"></RoundButtonUI>
+        <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" routeTo={route} text="CONTINUE"></RoundButtonUI>
     </div>
   </FirstResultCont>
 }
