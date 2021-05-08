@@ -17,15 +17,6 @@ const ImageCont = styled.div`
         to {bottom: 0px;}
     }
 
-    @keyframes moveLeft{
-        from {
-            right: -500px;
-            bottom: 0px;
-        }
-        to {right: -350px;
-            bottom:-120px;
-        }
-    }
 `;
 
 const ImageInput = styled.img`
