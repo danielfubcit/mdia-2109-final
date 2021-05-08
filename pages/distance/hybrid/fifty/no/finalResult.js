@@ -66,10 +66,10 @@ export default function FinalResult() {
       {compress1 === false ? <FinalResultTextBoxUI text="Walk or ride" src="/bicycle.svg" fontsize="30"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/bicycle.svg" text="When Possible walk or ride your bike. Not only does it help the environment, it’s healthy!"></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB" onClick={onClick2}>
-      {compress2 === false ? <FinalResultTextBoxUI text="Reduce CO2" src="/carbon-dioxide.svg" fontsize="28"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/carbon-dioxide.svg" text="Carpooling or taking public transport helps reduce CO2 emissions."></FinalResultTextBoxExtandUI>}
+      {compress2 === false ? <FinalResultTextBoxUI delay="3s" text="Reduce CO2" src="/carbon-dioxide.svg" fontsize="28"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/carbon-dioxide.svg" text="Carpooling or taking public transport helps reduce CO2 emissions."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB" onClick={onClick3}>
-      {compress3 === false ? <FinalResultTextBoxUI text="Slow down!" src="/clock.svg" fontsize="30"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/clock.svg" text="Speeding and unneccesary acceleration reduces mileage by up to 33% and increases CO2 emissions."></FinalResultTextBoxExtandUI>}
+      {compress3 === false ? <FinalResultTextBoxUI delay="4s" text="Slow down!" src="/clock.svg" fontsize="30"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/clock.svg" text="Speeding and unneccesary acceleration reduces mileage by up to 33% and increases CO2 emissions."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB">
       <ButtonUI routeTo="/" bgcolor="#2C5A27" width="190" height="60" text="Return Home" fontSize="26"></ButtonUI>
