@@ -68,13 +68,13 @@ export default function Distance() {
             <QuestionTextboxUI animation="sizeChange" width="50" text="Distance driven today" src="/gps.png"></QuestionTextboxUI>
         </div>
         <div className="item">
-            <ButtonUI routeTo={route1} text="0 - 25 km"></ButtonUI>
+            <ButtonUI animation="moveToRight" delay="0.5s" routeTo={route1} text="0 - 25 km"></ButtonUI>
         </div>
         <div className="item">
-            <ButtonUI routeTo={route2} text="26 - 50 km"></ButtonUI>
+            <ButtonUI animation="moveToRight" delay="0.75s" routeTo={route2} text="26 - 50 km"></ButtonUI>
         </div>
         <div className="item">
-            <ButtonUI routeTo={route3} text="50+ km"></ButtonUI>
+            <ButtonUI animation="moveToRight" delay="1s" routeTo={route3} text="50+ km"></ButtonUI>
         </div>
     </div>
   </DistanceCont>
