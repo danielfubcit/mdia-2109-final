@@ -15,8 +15,8 @@ const InfoTextBoxCont = styled.div`
     font-weight: bold;
 
     animation: size;
-    animation-duration: 1s; 
-    animation-delay:0.25s;
+    animation-duration: 1.25s; 
+    animation-delay:1s;
     animation-fill-mode: both;
 
     @keyframes size {
