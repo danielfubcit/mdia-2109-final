@@ -66,10 +66,10 @@ export default function FinalResult() {
       {compress1 === false ? <FinalResultTextBoxUI /> : <FinalResultTextBoxExtandUI />}
     </div>
     <div className="marginB" onClick={onClick2}>
-      {compress2 === false ? <FinalResultTextBoxUI text="Reuse &#38; Recycle" src="/recycle.svg" fontsize="26"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/recycle.svg" text="29% of greenhouse gas emmissions result from provision of goods."></FinalResultTextBoxExtandUI>}
+      {compress2 === false ? <FinalResultTextBoxUI delay="3s" text="Reuse &#38; Recycle" src="/recycle.svg" fontsize="26"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/recycle.svg" text="29% of greenhouse gas emmissions result from provision of goods."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB" onClick={onClick3}>
-      {compress3 === false ? <FinalResultTextBoxUI text="Consider..." src="/public-transport.svg"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/public-transport.svg" text="carpooling or taking public transport to reduce the amount of gas emissions contributed to the environment."></FinalResultTextBoxExtandUI>}
+      {compress3 === false ? <FinalResultTextBoxUI delay="4s" text="Consider..." src="/public-transport.svg"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/public-transport.svg" text="carpooling or taking public transport to reduce the amount of gas emissions contributed to the environment."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB">
       <ButtonUI routeTo="/" bgcolor="#2C5A27" width="190" height="60" text="Return Home" fontSize="26"></ButtonUI>
