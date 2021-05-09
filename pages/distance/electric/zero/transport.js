@@ -35,7 +35,7 @@ export default function Transport() {
       <title>Transport Selection</title>
     </Head>
     <div className="back">
-    <ButtonUI routeTo="factPage" bgcolor="#2C5A27" width="130" height="60" text="Back" fontSize="26"></ButtonUI>
+    <ButtonUI routeTo="fact" bgcolor="#2C5A27" width="130" height="60" text="Back" fontSize="26"></ButtonUI>
     </div>
     <div className="body">
         <div className="item">
