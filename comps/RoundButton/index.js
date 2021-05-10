@@ -20,6 +20,7 @@ const RoundButtonInput = styled.button`
     font-size: ${props=>props.fontSize}px;
     border: none;
     box-shadow: 0px 5px 7px grey;
+    margin-bottom:100px;
     
     animation: ${props=>props.animation};
     animation-duration: 1s; 
