@@ -72,7 +72,7 @@ export default function FinalResult() {
       {compress3 === false ? <FinalResultTextBoxUI delay="4s" text="Slow down!" src="/clock.svg" fontsize="30"></FinalResultTextBoxUI> : <FinalResultTextBoxExtandUI src="/clock.svg" text="Speeding and unneccesary acceleration reduces mileage by up to 33% and increases CO2 emissions."></FinalResultTextBoxExtandUI>}
     </div>
     <div className="marginB">
-      <ButtonUI routeTo="/" bgcolor="#2C5A27" width="190" height="60" text="Return Home" fontSize="26"></ButtonUI>
+      <ButtonUI routeTo="/reading" bgcolor="#2C5A27" width="190" height="60" text="Next" fontSize="26"></ButtonUI>
     </div>
   </FinalResultCont>
 }

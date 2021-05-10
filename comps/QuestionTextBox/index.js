@@ -36,7 +36,7 @@ const QuestionTextboxImg = styled.img`
 const QuestionTextboxText = styled.div`
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
-    font-size: 34px;
+    font-size: ${prop=>prop.fontsize}px;
     text-align: center;
     color: white;
     padding-bottom: 30px;
@@ -47,12 +47,13 @@ const QuestionTextboxUI = ({
     text = "Select your car type",
     src = "/greenCar.svg",
     width = "80",
-    animation = "moveToRight"
+    animation = "moveToRight",
+    fontsize = "34"
 }) => {
     return <QuestionTextboxCont>
         <QuestionTextboxImg width={width} src={src} animation={animation}>
         </QuestionTextboxImg>
-        <QuestionTextboxText >
+        <QuestionTextboxText fontsize={fontsize}>
         {text}
         </QuestionTextboxText>
     </QuestionTextboxCont>

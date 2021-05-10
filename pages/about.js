@@ -16,10 +16,6 @@ const AboutCont = styled.div`
   .marginB {
     margin-bottom:50px;
   }
-
-  .button {
-    margin-bottom:200px;
-  }
 `;
 
 export default function ABout() {
@@ -36,7 +32,7 @@ export default function ABout() {
     <div>
         <RegTextBoxUI text="Simply answer to the best of your ability and do your part to sustain the planet!"></RegTextBoxUI>
     </div>
-    <div className="button">
+    <div>
       <RoundButtonUI text="BACK" routeTo="/"></RoundButtonUI>
     </div>
   </AboutCont>
