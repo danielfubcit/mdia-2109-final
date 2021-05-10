@@ -4,6 +4,7 @@ import React, {useState}  from 'react';
 import ImageUI from '../comps/Image';
 import MainTitleUI from '../comps/MainTitle';
 import RoundButtonUI from '../comps/RoundButton';
+import LinkUI from '../comps/Link';
 
 const HomeCont = styled.div`
   margin:0;
@@ -17,6 +18,11 @@ const HomeCont = styled.div`
   .img, .title, .button{
     margin:50px;
   }
+
+  .link{
+    position: relative;
+    top:-120px;
+  }
 `;
 
 export default function Home() {
@@ -29,9 +35,13 @@ export default function Home() {
     </div>
     <div className="title">
       <MainTitleUI fontsize="24" color="white" text="TEST YOUR CARBON EMISSION RATE"></MainTitleUI>
+      
     </div>
     <div className="button">
       <RoundButtonUI></RoundButtonUI>
+    </div>
+    <div className="link">
+      <LinkUI></LinkUI>
     </div>
   </HomeCont>
 }
