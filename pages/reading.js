@@ -17,7 +17,7 @@ const ReadingCont = styled.div`
     }
 
     .top {
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .bottom {
