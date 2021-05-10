@@ -12,7 +12,6 @@ const AboutCont = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #79CFE2;
-  height:100vh;
 
   .marginB {
     margin-bottom:50px;
