@@ -5,7 +5,7 @@ const AboutLogoCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:200px;
+    margin-top:50px;
 `;
 
 const AboutLogoText = styled.div`
