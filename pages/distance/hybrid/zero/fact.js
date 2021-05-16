@@ -38,7 +38,7 @@ const FactCont = styled.div`
 `;
 
 export default function Fact() {
-
+  const router = useRouter();
   return <FactCont>
     <Head>
       <title>Fact Page</title>
@@ -51,14 +51,15 @@ export default function Fact() {
           <InfoTextBoxHeadUI></InfoTextBoxHeadUI>
       </div>
       <div>
-          <InfoTextBoxUI text="The transportation sector on gasoline alone makes up 24% of Canada’s carbon emissions..."></InfoTextBoxUI>
+          <InfoTextBoxUI text="Worldwide, SUVs are the 2nd larget contributor to CO2 increase this decade, surpassed only by power generation."></InfoTextBoxUI>
       </div>
       <div className="marginB">
-          <ImageUI iteration="infinite" animation="moveLeftRight" width="100" src="/transport.png"></ImageUI>
+          <ImageUI iteration="infinite" animation="moveLeftRight" width="100" src="/SUV.png"></ImageUI>
       </div>
       <div className="marginB">
-          <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" routeTo="transport" text="CONTINUE"></RoundButtonUI>
+          <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" onClick={()=>router.push("transport")} text="CONTINUE"></RoundButtonUI>
       </div>
     </div>
   </FactCont>
 }
+
