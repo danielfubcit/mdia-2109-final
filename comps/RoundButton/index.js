@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {useRouter} from 'next/router';
 
 const RoundButtonCont = styled.span`
     position: ${props=>props.position};
@@ -24,7 +23,7 @@ const RoundButtonInput = styled.button`
     
     animation: ${props=>props.animation};
     animation-duration: 1s; 
-    animation-delay:2s;
+    animation-delay: ${props=>props.delay};
     animation-fill-mode: forwards;
     visibility: ${props=>props.visibility};
 
@@ -47,15 +46,15 @@ const RoundButtonInput = styled.button`
 const RoundButtonUI = ({
     text="BEGIN",
     bgcolor="#9AC397",
-    routeTo="/vehicleSelection",
     fontSize=30,
     position = "relative",
     animation = "",
     visibility = "visible",
+    delay = "2s",
+    onClick = () => {}
 }) => {
-    const router = useRouter();
-    return <RoundButtonCont  position={position} onClick={()=>router.push(routeTo)}>
-        <RoundButtonInput visibility={visibility} animation={animation} position={position} bgcolor={bgcolor} fontSize={fontSize}>
+    return <RoundButtonCont  position={position} onClick={onClick}>
+        <RoundButtonInput delay={delay} visibility={visibility} animation={animation} position={position} bgcolor={bgcolor} fontSize={fontSize}>
         {text}
         </RoundButtonInput>
     </RoundButtonCont>

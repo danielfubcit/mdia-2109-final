@@ -24,6 +24,15 @@ const ImageCont = styled.div`
         50% {left: 0px;}
     }
 
+    @keyframes car{
+        from {
+            top: 480px;
+            left:-200px;
+        }
+        to {left: 30px;
+            top: 640px;}
+    }
+
 `;
 
 const ImageInput = styled.img`
@@ -41,10 +50,11 @@ const ImageUI = ({
     animation = "",
     delay = "1s",
     zIndex = "",
-    iteration = 1
+    iteration = 1,
+    routeTo = "",
 }) => {
     const router = useRouter();
-    return <ImageCont iteration={iteration} zIndex={zIndex} position={position} animation={animation} delay={delay} onClick={()=>router.push(routeTo)}>
+    return <ImageCont onClick={()=>router.push(routeTo)} iteration={iteration} zIndex={zIndex} position={position} animation={animation} delay={delay} onClick={()=>router.push(routeTo)}>
          <ImageInput width={width} src={src} /> 
     </ImageCont>
 }
