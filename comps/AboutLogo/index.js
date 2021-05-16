@@ -40,7 +40,7 @@ const AboutLogoText = styled.div`
         100% {
             width: 256px;
             height: 110px;
-            font-size: 36px;
+            font-size: ${props=>props.fontsize}px;
         }
     }
 `;
@@ -66,11 +66,11 @@ const AboutLogoImg = styled.img`
 const AboutLogoUI = ({
     text = "Welcome to our App",
     src = "/Earth.png",
-    bgcolor = "#45AFDD"
+    fontsize = 36,
 }) => {
     return <AboutLogoCont>
         <AboutLogoImg src={src}></AboutLogoImg>
-        <AboutLogoText>{text}</AboutLogoText>
+        <AboutLogoText fontsize={fontsize}>{text}</AboutLogoText>
     </AboutLogoCont>
 }
 

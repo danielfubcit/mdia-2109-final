@@ -19,47 +19,74 @@ export const vehicles = {
 export const gaskm = {
     zero:{
         text1:"4kg",
+        text2:"GAS",
+        text3:"0-25km",
         route:"/distance/gas/zero/fact",
+        sameRoute:"/distance/gas/zero/"
     },
     twentyFive:{
         text1:"10kg",
+        text2:"GAS",
+        text3:"26-50km",
         route:"/distance/gas/twentyFive/fact",
+        sameRoute:"/distance/gas/twentyFive/"
     },
     fifty:{
         text1:"14kg",
+        text2:"GAS",
+        text3:"50km+",
         bgcolor:"#FA9AAB",
         route:"/distance/gas/fifty/fact",
+        sameRoute:"/distance/gas/fifty/"
     }
 }
 
 export const electrickm = {
     zero:{
         text1:"1kg",
+        text2:"ELECTRIC",
+        text3:"0-25km",
         route:"/distance/electric/zero/fact",
+        sameRoute:"/distance/electric/zero/"
     },
     twentyFive:{
         text1:"2kg",
+        text2:"ELECTRIC",
+        text3:"26-50km",
         route:"/distance/electric/twentyFive/fact",
+        sameRoute:"/distance/electric/twentyFive/"
     },
     fifty:{
         text1:"3kg",
+        text2:"ELECTRIC",
+        text3:"50km+",
         bgcolor:"#FA9AAB",
         route:"/distance/electric/fifty/fact",
+        sameRoute:"/distance/electric/fifty/"
     }
 }
 
 export const hybridkm = {
     zero:{
         text1:"3kg",
+        text2:"HYBRID",
+        text3:"0-25km",
         route:"/distance/hybrid/zero/fact",
+        sameRoute:"/distance/hybrid/zero/"
     },
     twentyFive:{
         text1:"7kg",
+        text2:"HYBRID",
+        text3:"26-50km",
         route:"/distance/hybrid/twentyFive/fact",
+        sameRoute:"/distance/hybrid/twentyFive/"
     },
     fifty:{
         text1:"10kg",
+        text2:"HYBRID",
+        text3:"50+km",
         bgcolor:"#FA9AAB",
         route:"/distance/hybrid/fifty/fact",
+        sameRoute:"/distance/hybrid/fifty/"
     }
 }

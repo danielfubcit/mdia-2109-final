@@ -20,7 +20,7 @@ const ButtonInput = styled.button`
     font-size: ${props=>props.fontSize}px;
     font-weight: bold;
     border: none;
-    box-shadow: 2px 7px 10px grey;
+    box-shadow: 2px 5px 10px grey;
     animation-name: ${prop=>prop.animation};
     animation-duration: 2s;  
     animation-delay: ${prop=>prop.delay};
@@ -29,6 +29,12 @@ const ButtonInput = styled.button`
     @keyframes moveToRight{
         from {left: -200px;}
         to {left: 0px;}
+    }
+
+    @keyframes opacity {
+        0% { opacity: 0; }
+        100% { opacity:1; }
+        
     }
 `;
 
@@ -44,7 +50,7 @@ const ButtonUI = ({
     delay = "0s",
 }) => {
     const router = useRouter();
-    return <ButtonCont  onClick={()=>router.push(routeTo)} >
+    return <ButtonCont onClick={()=>router.push(routeTo)} >
         <ButtonInput animation={animation} delay={delay} height={height} width={width} bgcolor={bgcolor} fontSize={fontSize} >
         {text}
         </ButtonInput>

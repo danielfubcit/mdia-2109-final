@@ -38,7 +38,7 @@ const FactCont = styled.div`
 `;
 
 export default function Fact() {
-
+  const router = useRouter();
   return <FactCont>
     <Head>
       <title>Fact Page</title>
@@ -57,8 +57,9 @@ export default function Fact() {
           <ImageUI iteration="infinite" animation="moveLeftRight" width="100" src="/transport.png"></ImageUI>
       </div>
       <div className="marginB">
-          <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" routeTo="transport" text="CONTINUE"></RoundButtonUI>
+          <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" onClick={()=>router.push("transport")} text="CONTINUE"></RoundButtonUI>
       </div>
     </div>
   </FactCont>
 }
+

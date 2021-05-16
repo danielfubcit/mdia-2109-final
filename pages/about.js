@@ -4,6 +4,7 @@ import React, {useState}  from 'react';
 import AboutLogoUI from '../comps/AboutLogo';
 import RoundButtonUI from '../comps/RoundButton';
 import RegTextBoxUI from '../comps/RegTextBox';
+import {useRouter} from 'next/router';
 
 const AboutCont = styled.div`
   margin:0;
@@ -18,7 +19,8 @@ const AboutCont = styled.div`
   }
 `;
 
-export default function ABout() {
+export default function About() {
+  const router = useRouter();
   return <AboutCont>
     <Head>
       <title>About Page</title>
@@ -33,7 +35,7 @@ export default function ABout() {
         <RegTextBoxUI text="Simply answer to the best of your ability and do your part to sustain the planet!"></RegTextBoxUI>
     </div>
     <div>
-      <RoundButtonUI text="BACK" routeTo="/"></RoundButtonUI>
+      <RoundButtonUI text="BACK" onClick={()=>router.push("/")}></RoundButtonUI>
     </div>
   </AboutCont>
 }
