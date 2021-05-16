@@ -51,10 +51,10 @@ export default function Fact() {
           <InfoTextBoxHeadUI></InfoTextBoxHeadUI>
       </div>
       <div>
-          <InfoTextBoxUI text="Worldwide, SUVs are the 2nd larget contributor to CO2 increase this decade, surpassed only by power generation."></InfoTextBoxUI>
+          <InfoTextBoxUI text="The transportation sector on gasoline alone makes up 24% of Canada’s carbon emissions..."></InfoTextBoxUI>
       </div>
       <div className="marginB">
-          <ImageUI iteration="infinite" animation="moveLeftRight" width="100" src="/SUV.png"></ImageUI>
+          <ImageUI iteration="infinite" animation="moveLeftRight" width="100" src="/transport.png"></ImageUI>
       </div>
       <div className="marginB">
           <RoundButtonUI position="absolute" animation="fadeIn" visibility="hidden" onClick={()=>router.push("transport")} text="CONTINUE"></RoundButtonUI>
