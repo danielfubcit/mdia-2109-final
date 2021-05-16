@@ -18,7 +18,7 @@ const AboutCont = styled.div`
   }
 `;
 
-export default function ABout() {
+export default function About() {
   return <AboutCont>
     <Head>
       <title>About Page</title>

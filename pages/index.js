@@ -5,6 +5,7 @@ import ImageUI from '../comps/Image';
 import MainTitleUI from '../comps/MainTitle';
 import RoundButtonUI from '../comps/RoundButton';
 import LinkUI from '../comps/Link';
+import {useRouter} from 'next/router';
 
 const HomeCont = styled.div`
   margin:0;
@@ -13,6 +14,7 @@ const HomeCont = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #79CFE2;
+  height: 100vh;
 
   .img, .title, .button{
     margin:50px;
@@ -25,6 +27,7 @@ const HomeCont = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
   return <HomeCont>
     <Head>
       <title>Home Page</title>
@@ -37,7 +40,7 @@ export default function Home() {
       
     </div>
     <div className="button">
-      <RoundButtonUI></RoundButtonUI>
+      <RoundButtonUI onClick={()=>router.push("/vehicleSelection")}></RoundButtonUI>
     </div>
     <div className="link">
       <LinkUI></LinkUI>
